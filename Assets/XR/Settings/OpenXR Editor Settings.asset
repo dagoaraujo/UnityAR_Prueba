@@ -16,4 +16,6 @@ MonoBehaviour:
   Values:
   - featureSets:
     - com.qualcomm.snapdragon.spaces
+    - com.qualcomm.snapdragon.spaces.experimental
   m_vulkanAdditionalGraphicsQueue: 0
+  m_vulkanOffscreenSwapchainNoMainDisplay: 1
