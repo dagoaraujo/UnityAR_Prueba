@@ -148,7 +148,7 @@
                     "path": "<XRController>{RightHand}/{Trigger}",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";New Control Scheme",
+                    "groups": "XR CONTROLLER",
                     "action": "Trigger",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -159,7 +159,7 @@
                     "path": "<XRController>/{TriggerButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";New Control Scheme",
+                    "groups": "XR CONTROLLER",
                     "action": "Trigger Button",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -170,7 +170,7 @@
                     "path": "<XRController>{RightHand}/{Grip}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Grip",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -181,7 +181,7 @@
                     "path": "<XRController>{RightHand}/{GripButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Grip Button",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -192,7 +192,7 @@
                     "path": "<XRController>{RightHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Primary Button",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -203,7 +203,7 @@
                     "path": "<XRController>{RightHand}/{SecondaryButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Secundary Button",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -214,7 +214,7 @@
                     "path": "<XRController>{RightHand}/{MenuButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Menu Button",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -225,7 +225,7 @@
                     "path": "<XRController>{RightHand}/{Primary2DAxisClick}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Stick Button",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -236,7 +236,7 @@
                     "path": "<XRController>{RightHand}/{Primary2DAxis}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Stick",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -247,7 +247,7 @@
                     "path": "<XRController>{RightHand}/{Primary2DAxis}",
                     "interactions": "Sector(directions=1)",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Stick North",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -258,7 +258,7 @@
                     "path": "<XRController>{RightHand}/{Primary2DAxis}",
                     "interactions": "Sector(directions=2)",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Stick South",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -269,7 +269,7 @@
                     "path": "<XRController>{RightHand}/{Primary2DAxis}",
                     "interactions": "Sector(directions=4)",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Stick East",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -280,7 +280,7 @@
                     "path": "<XRController>{RightHand}/{Primary2DAxis}",
                     "interactions": "Sector(directions=8)",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Stick West",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -288,10 +288,21 @@
                 {
                     "name": "",
                     "id": "23f916d6-a25a-47be-9a9d-71ee5e9c043c",
-                    "path": "<XRController>{RightHand}/devicePosition",
+                    "path": "<XRHMD>/devicePosition",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f920b420-963a-462f-b43a-3cf9ac24ffde",
+                    "path": "<XRController>{RightHand}/{DevicePosition}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR CONTROLLER",
                     "action": "Position",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -302,7 +313,66 @@
                     "path": "<XRController>{RightHand}/deviceRotation",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";XR CONTROLLER",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "15501e22-b2ba-4987-b8b4-3ffb5e39dea8",
+                    "path": "<XRHMD>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR CONTROLLER",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "HMD",
+            "id": "d9a580bb-441b-4f25-abc2-9d44aedff3f5",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "2f7c1904-6341-48eb-bcd8-bd21945de3e3",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "db656c38-89f5-4815-9e44-b41d815bb55e",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cc791ffb-c963-486a-8faa-b26eb6022da6",
+                    "path": "<XRHMD>/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR HMD",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "adc1f7c9-ba9f-4d42-8b0b-8458dc5d8eb9",
+                    "path": "<XRHMD>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR HMD",
                     "action": "Rotation",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -312,11 +382,22 @@
     ],
     "controlSchemes": [
         {
-            "name": "New Control Scheme",
-            "bindingGroup": "New Control Scheme",
+            "name": "XR CONTROLLER",
+            "bindingGroup": "XR CONTROLLER",
             "devices": [
                 {
                     "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "XR HMD",
+            "bindingGroup": "XR HMD",
+            "devices": [
+                {
+                    "devicePath": "<XRHMD>",
                     "isOptional": false,
                     "isOR": false
                 }
